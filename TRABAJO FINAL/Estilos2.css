@@ -1,0 +1,148 @@
+
+@font-face{
+    font-family: Magodeoz;
+    src: url(letra/MagodeOz.ttf);
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+.main-container{
+    width:100%;
+    min-height: 100vh;
+}
+.mago-container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(Img/Logoinicio.jpg);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.logo-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Form-container{
+    min-height: 40vh;
+    width: 20em;
+    
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+
+}
+.input-container label{
+    font-size: 1.5em;
+    color:white ;
+}
+.input-container input{
+height: 2em;
+border-radius: 5px;
+border: 0px;
+
+}
+.login-btn{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    border: 0px;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    border-radius: 5px;
+}
+.No2-link{
+    margin-top: 1em;
+    width: 50%;
+    color:white;  
+    text-align: center;
+    text-decoration: overline;
+}
+.polices p{
+    color: white;
+    font-size: 1em;
+    margin: 0px;
+    text-align: center;
+}
+.sesión{
+
+    font-family: Magodeoz;
+   font-size: 4em;
+    color: white;
+    align-items: center;
+}
+
+.police input{
+    background-color: black;
+}
+.police input:active{
+    background-color: black;
+}
+.back-btn{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    border: 0px;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+.input-container{
+    width: 100%;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (width:720px) and (orientation:landscape)
+    {
+        .mago-container{
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            background-image: none;
+        }  
+        .main-container{
+            width: 50%;
+            height: 100vh;
+            background-image: url( Img/Logoinicio.jpg );
+            background-position: center;
+            background-size:cover;
+      
+        }
+        .Form-container{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            }
+        .sesión{
+            display: block;
+            color: white;
+            font-size: 3em;
+      
+        }
+         .form{
+             width: 50%;
+         }
+      
+      }

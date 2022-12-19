@@ -1,0 +1,157 @@
+@font-face{
+    font-family: Magodeoz;
+    src: url(letra/MagodeOz.ttf);
+}
+body {
+	overflow-x: hidden;
+	width: 100%;
+	min-width: 320px;
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+.main-container{
+    width:100%;
+    min-height: 100vh;
+    background: #181818;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+        height: 70px;
+        background: rgba(120, 120, 120, 0.7);
+        top: 0;
+        left:0;
+}
+.logo-container img{ 
+    align-items: center;
+    display: flex;
+
+    
+}
+.logo-container img{
+    width: 3em;
+}
+.list-menu {
+    background-color: rgba(120, 120, 120, 0.7);
+    position: fixed;
+    top: 4em;
+    right: 0px;
+    text-align: center;
+    height: 100vh;
+    width: 50%;
+    border-radius: 10px 0px 0px 0px;
+    transform: translateX(100%);
+   transition: all 1.9s;
+   z-index: 9;
+   
+}
+.list-menu li{
+    list-style: none;
+    margin-top: 3em
+}
+.list-menu li a{
+    color: white;
+}
+
+.logo-container img{
+    width: 13em;
+}
+.album-list .contents-title {
+	font-family: Magodeoz;
+    z-index: 2; 
+	position: relative; 
+	font-size: 80px; 
+	color: #fff; 
+	text-align: center;
+
+}
+.album-list li{
+	margin: 10px 20px;
+	float: left;
+	width: 350px;
+    
+}
+.contents-obj img {
+	width: 100%;
+	height: 100%;
+    z-index: 2;
+    position: relative;
+}
+.album-list li a {
+	position: relative; 
+	display: block; 
+	width: 100%;
+	 height: 100%;
+	}
+    .info_box {
+        display: flex; 
+        position: absolute; 
+        color: #fff; 
+        width: 100%; 
+        height: 100%; 
+        top: 0; left: 0; 
+        background: rgba(0, 0, 0, 0.9); 
+        z-index: 3;
+        font-family: Magodeoz;
+        justify-content: center;
+        align-items: center;
+        font-size: 34px;
+        line-height: 25xp;
+        opacity: 0;
+        transition: all 0.5s;
+    
+    }
+.info_box:hover{
+    opacity: 1;
+}
+@media screen and (max-width: 720px){
+    .mago-container{
+        display: flex;
+        width: 50%;
+        flex-direction: row;
+        background-image: none;
+    }  
+
+.album-list {
+    width: 100%;
+    max-width: 144px;
+    margin: 0 auto;
+    padding: 15px 18px 13px;
+}
+.album-list.info_box {
+    width: 100%;
+    max-width: 144px;
+    margin: 0 auto;
+    padding: 15px 18px 13px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div .contents-obj {
+    display: block;
+    width: 11em;
+    height: 11em;
+   
+}
+.album-list .contents-title {
+	font-family: 'Magodeoz';
+    z-index: 2; 
+	position: relative; 
+	font-size: 30px; 
+	color: #fff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+}

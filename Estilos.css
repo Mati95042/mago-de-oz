@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2? family = Noto + Sans + KR: wght @ 500 & display = swap');
+@font-face{
+    font-family: Magodeoz;
+    src: url(letra/MagodeOz.ttf);
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+.main-container{
+    width:100%;
+    min-height: 100vh;
+
+}
+.mago-container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(Img/Logoinicio.jpg);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.No1-link{
+  margin-top: 1em;
+  width: 50%;
+  color:white;  
+  text-align: center;
+  text-decoration: overline;
+}
+.sesion{
+   font-family: Magodeoz;
+   font-size: 75px;
+    color: white;
+}
+
+.login-btn{
+
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    border: 0px;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    border-radius: 5px;
+   
+}
+.Form-container{
+    min-height: 50vh;
+    width: 20em;
+
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.input-container label{
+    font-size: 1.5em;
+    color:white ;
+    width: 100%;
+}
+.input-container input{
+height: 2.5em;
+border-radius: 3px;
+border: 0px;
+width: 100%;
+
+}
+
+@media screen and (width:720px)  and (orientation:landscape)
+{
+    .mago-container{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        background-image: none;
+    }  
+    .main-container{
+        width: 50%;
+        height: 100vh;
+        background-image: url( Img/Logoinicio.jpg );
+        background-position: center;
+        background-size:cover;
+  
+    }
+    .Form-container{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        }
+    .sesión{
+        display: block;
+        color: white;
+        font-size: 75px;
+  
+    }
+     .form{
+         width: 50%;
+     }
+  
+  }
